@@ -25,6 +25,6 @@ Usage:
 To use the API simply initialise the wrapper with the BCSite object and use it's method. Example:
 
 def get_last_days_orders():
-	bc_site = BCSite.objects.get(site_code="MY_SITE")
-	crm_wrapper = CrmWrapper(bc_site)
-	crm_wrapper.get_or_update_orders(datetime.datetime.now()-datetime.timedelta(days=1))
+    bc_site = BCSite.objects.get(site_code="MY_SITE")
+    crm_wrapper = CrmWrapper(bc_site)
+    crm_wrapper.get_or_update_orders(datetime.datetime.now()-datetime.timedelta(days=1))
